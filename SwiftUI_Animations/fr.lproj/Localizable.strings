@@ -1,0 +1,75 @@
+/*
+ Localizable.strings
+ Dotillism
+ 
+ Created by BeautifulCats Team on 20/03/22.
+ 
+ */
+
+"A long press opens a menu. You can use it if you get stuck.\n\nTry a long press." = "Une pression longue ouvre un menu. Vous pouvez l'utiliser si vous êtes bloqué.\n\nEssayez une pression longue.";
+
+"About" = "Information";
+
+"Additional credits" = "Crédits additionnels";
+
+"Amazing!" = "Incroyable!";
+
+"Are you sure?" = "Vous êtes sûr?";
+
+"Credits" = "Crédits";
+
+"Dark dots are obstacles." = "Les points sombres sont des obstacles.";
+
+"Dotillism is a casual zen game created by team BeautifulCats @ Apple Developer Academy | Naples." = "Dotillism est un jeu zen décontracté créé par l'équipe BeautifulCats @ Apple Developer Academy | Naples.";
+
+"Erase progress" = "Effacer la progression";
+
+"Export output" = "Sortie d'exportation";
+
+"Good." = "Bien.";
+
+"Great." = "Super.";
+
+"Last level" = "Dernier niveau";
+
+"I think you are ready to help me." = "Je pense que vous êtes prêt à m'aider.";
+
+"I’ll show you." = "Je vais vous montrer.";
+
+"It’s been a while since I’ve met anyone like you." = "Cela fait longtemps que je n'ai pas rencontré quelqu'un comme vous.";
+
+"Level editor" = "Éditeur de niveaux";
+
+"Music “Mystique” by Adi_Goldstein.\n\nSound effects obtained from https://www.zapsplat.com." = "Musique “Mystique” par Adi_Goldstein.\n\nEffets sonores obtenus à partir de https://www.zapsplat.com.";
+
+"Now please help me bring back color into my kingdom that turned dark." = "Maintenant, s'il vous plaît, aidez-moi à ramener la couleur dans mon royaume qui est devenu sombre.";
+
+"Please bring some color in this dark place." = "S'il vous plaît, apportez un peu de couleur dans cet endroit sombre.";
+
+"Repeat tutorial" = "Répéter le tutoriel";
+
+"Reset grid" = "Remettre la grille à zéroa";
+
+"Swipe right to color a line." = "Balayez vers la droite pour colorier une ligne.";
+
+"That was easy, wasn’t it?" = "C'était facile, n'est-ce pas?";
+
+"Welcome, explorer." = "Bienvenue, explorateur.";
+
+"You are really talented." = "Vous avez beaucoup de talent.";
+
+"You can always retrace your steps." = "Vous pouvez toujours revenir sur vos pas.";
+
+"You can swipe up, down, left and right." = "Vous pouvez glisser vers le haut, le bas, la gauche et la droite.";
+
+"You don’t believe me?" = "Vous ne me croyez pas?";
+
+"Your are the kind of human that can bring color to the world." = "Vous êtes le genre d'humain qui peut apporter de la couleur au monde.";
+
+"Thank you for helping us, the world is a better place now." = "Merci de nous avoir aidés, le monde est meilleur maintenant.";
+
+"Start again" = "Recommencer";
+
+"graphic designer" = "graphiste";
+
+"Leonardo Bertinelli: lead game designer, level designer, coder.\nNicolas Mariniello: lead coder, game designer, frontend developer.\n\nClelia Iovine: graphic designer.\nMaddalena Zampitelli: graphic designer." = "Leonardo Bertinelli: concepteur principal de jeux, concepteur de niveaux, codeur.\nNicolas Mariniello: codeur principal, concepteur de jeux, développeur frontal.\n\nClelia Iovine: graphiste.\nMaddalena Zampitelli: graphiste.";
