@@ -55,7 +55,7 @@ class Grid: ObservableObject {
                 }
                 
                 i += 1
-                j *= 1.1
+                j *= 1.06
             }
         } else if translation.width < -90 {
             var i = currentDot.1 - 1
@@ -71,7 +71,7 @@ class Grid: ObservableObject {
                 }
                 
                 i -= 1
-                j *= 1.1
+                j *= 1.06
             }
         } else if translation.height < -90 {
             var i = currentDot.0 - 1
@@ -103,7 +103,7 @@ class Grid: ObservableObject {
                 }
                 
                 i += 1
-                j *= 1.1
+                j *= 1.06
             }
         }
         
