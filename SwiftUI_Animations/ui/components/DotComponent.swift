@@ -21,9 +21,8 @@ struct DotComponent: View {
         Color(isObstacle ? dot.obstacleColor : dot.color)
             .cornerRadius(.infinity)
             .frame(width: diameter, height: diameter)
-            .opacity(dot.isColored ? 1.0 : 0.0)
-            .overlay(Circle().strokeBorder(.black, lineWidth: diameter * (dot.coordinates == grid.currentDot ? 0.35 : 0.0)).opacity(win ? 0 : 0.35))
-            .scaleEffect(dot.coordinates == grid.currentDot && !win ? 1.2 : (dot.isColored ? 1.0 : 0.0))
+            .overlay(Circle().strokeBorder(.black, lineWidth: diameter * (dot.coordinates == grid.currentDot ? 0.35 : 0.0)).opacity(0.35))
+            .scaleEffect(dot.coordinates == grid.currentDot ? 1.2 : (dot.isColored ? 1.0 : 0.0))
             .padding(6)
             .onAppear {
                 diameter = UIScreen.main.bounds.width / CGFloat(grid.cols) - 17
@@ -31,7 +30,7 @@ struct DotComponent: View {
             }
             .onChange(of: win) { newValue in
                 if dot.isObstacle && newValue {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + Double.random(in: 0.5...1.5) * 1.15) {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + Double.random(in: 0.5...1.5)) {
                         withAnimation(.easeInOut) {
                             isObstacle = false
                         }

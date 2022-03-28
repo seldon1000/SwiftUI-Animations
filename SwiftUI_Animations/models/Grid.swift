@@ -39,7 +39,7 @@ class Grid: ObservableObject {
     }
     
     func dragGesture(translation: CGSize) -> Bool {
-        var j: Double = 0.2
+        var j: Double = 0.3
         
         if translation.width > 90 {
             var i = currentDot.1 + 1
@@ -55,7 +55,7 @@ class Grid: ObservableObject {
                 }
                 
                 i += 1
-                j *= 1.05
+                j *= 1.1
             }
         } else if translation.width < -90 {
             var i = currentDot.1 - 1
@@ -71,7 +71,7 @@ class Grid: ObservableObject {
                 }
                 
                 i -= 1
-                j *= 1.05
+                j *= 1.1
             }
         } else if translation.height < -90 {
             var i = currentDot.0 - 1
@@ -87,7 +87,7 @@ class Grid: ObservableObject {
                 }
                 
                 i -= 1
-                j *= 1.05
+                j *= 1.1
             }
         } else if translation.height > 90 {
             var i = currentDot.0 + 1
@@ -103,7 +103,7 @@ class Grid: ObservableObject {
                 }
                 
                 i += 1
-                j *= 1.05
+                j *= 1.1
             }
         }
         
