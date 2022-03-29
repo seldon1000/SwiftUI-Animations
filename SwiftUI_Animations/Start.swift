@@ -11,12 +11,10 @@ struct Start: View {
     @State var showMenu: Bool = false
     
     var body: some View {
-        ZStack {
-            VStack(spacing: 48) {
-                ArtworkView(showMenu: $showMenu)
-                if showMenu {
-                    MenuView(showMenu: $showMenu, menuType: .artwork)
-                }
+        VStack(spacing: 48) {
+            MainView(showMenu: $showMenu)
+            if showMenu {
+                MenuView(showMenu: $showMenu, menuType: .artwork)
             }
         }
         .ignoresSafeArea()

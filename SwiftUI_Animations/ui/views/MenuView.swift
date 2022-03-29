@@ -40,12 +40,12 @@ struct MenuView: View {
             }
         case .artwork:
             VStack(spacing: 16) {
-                MenuButton(label: "Repeat tutorial") {
+                MenuButton(label: "Button 1") {
                     withAnimation(.easeInOut) {
                         showMenu = false
                     }
                 }
-                MenuButton(label: "Erase progress") {
+                MenuButton(label: "Button 2") {
                     withAnimation(.easeInOut) {
                         showMenu = false
                     }

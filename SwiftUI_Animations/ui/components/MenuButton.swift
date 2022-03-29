@@ -16,7 +16,7 @@ struct MenuButton: View {
             ZStack {
                 Color.white
                     .cornerRadius(.infinity)
-                    .frame(width: 198, height: 56)
+                    .frame(width: UIScreen.main.bounds.width / 2, height: 56)
                 Text(label)
                     .font(.system(size: 16, design: .serif))
                     .foregroundColor(.black)

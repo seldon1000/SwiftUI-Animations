@@ -1,5 +1,5 @@
 //
-//  ArtworkView.swift
+//  MainView.swift
 //  SwiftUI_Animations
 //
 //  Created by Nicolas Mariniello on 28/03/22.
@@ -7,19 +7,16 @@
 
 import SwiftUI
 
-struct ArtworkView: View {
+struct MainView: View {
     @State var isPlaying: Bool = false
     
     @Binding var showMenu: Bool
     
     var body: some View {
         ZStack {
-            Image("artwork1")
-                .resizable()
-                .scaledToFill()
-                .saturation(0.0)
+            Color.pink
+                .opacity(isPlaying ? 0.0 : 0.2)
             if isPlaying {
-                Color.white
                 GameView(grid: Grid(level: level), isPlaying: $isPlaying)
                     .zIndex(100)
             }

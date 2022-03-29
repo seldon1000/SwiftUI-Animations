@@ -17,7 +17,7 @@
 		6FB7AD8F27C678E900A369B4 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB7AD8E27C678E900A369B4 /* Grid.swift */; };
 		6FB7AD9127C678FB00A369B4 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB7AD9027C678FB00A369B4 /* GameView.swift */; };
 		8A51CBF127C6A2C400F9467C /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A51CBF027C6A2C400F9467C /* Level.swift */; };
-		8AAEEBB627E49817006FCB10 /* ArtworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAEEBB527E49817006FCB10 /* ArtworkView.swift */; };
+		8AAEEBB627E49817006FCB10 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAEEBB527E49817006FCB10 /* MainView.swift */; };
 		8AAEEBBA27E4DE46006FCB10 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAEEBB927E4DE46006FCB10 /* MenuButton.swift */; };
 		8AAEEBBC27E4E2AB006FCB10 /* CircularMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAEEBBB27E4E2AB006FCB10 /* CircularMenuButton.swift */; };
 /* End PBXBuildFile section */
@@ -34,7 +34,7 @@
 		6FB7AD8E27C678E900A369B4 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		6FB7AD9027C678FB00A369B4 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		8A51CBF027C6A2C400F9467C /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
-		8AAEEBB527E49817006FCB10 /* ArtworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkView.swift; sourceTree = "<group>"; };
+		8AAEEBB527E49817006FCB10 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8AAEEBB927E4DE46006FCB10 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		8AAEEBBB27E4E2AB006FCB10 /* CircularMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularMenuButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,7 +90,7 @@
 		6FB7AD7F27C6772500A369B4 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				8AAEEBB527E49817006FCB10 /* ArtworkView.swift */,
+				8AAEEBB527E49817006FCB10 /* MainView.swift */,
 				6FB7AD9027C678FB00A369B4 /* GameView.swift */,
 				6F34874627D4D8AB00B9FBBA /* MenuView.swift */,
 			);
@@ -202,7 +202,7 @@
 				6FB7AD8B27C678BD00A369B4 /* Dot.swift in Sources */,
 				6FB7AD7027C673A400A369B4 /* SwiftUI_AnimationsApp.swift in Sources */,
 				6F34874727D4D8AB00B9FBBA /* MenuView.swift in Sources */,
-				8AAEEBB627E49817006FCB10 /* ArtworkView.swift in Sources */,
+				8AAEEBB627E49817006FCB10 /* MainView.swift in Sources */,
 				8A51CBF127C6A2C400F9467C /* Level.swift in Sources */,
 				6FB7AD8227C677F000A369B4 /* Start.swift in Sources */,
 				6FB7AD9127C678FB00A369B4 /* GameView.swift in Sources */,
