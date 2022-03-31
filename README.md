@@ -100,4 +100,9 @@ Pretty cool ah? Let's move on to the next animation.
 
 
 ## Overlays&Headackes
+
+The next aimation I would like to analyze is a simple swipe. Here, you use swipes to move vertically or horizontally and you move through all the available space, until you find an obstacles (dark dots in our case). The swipe should be quick but consistently animated, using colors, scale effect and overlays, with timed UI changes. Let's take a look.
+
+![Alt Text](https://github.com/seldon1000/SwiftUI_Animations/blob/main/ezgif-1-529eaaadff.gif)
+
 *** work in progress ***
