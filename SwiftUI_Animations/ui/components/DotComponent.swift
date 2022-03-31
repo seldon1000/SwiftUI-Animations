@@ -18,11 +18,11 @@ struct DotComponent: View {
     var dot: Dot
     
     var body: some View {
-        Color(isObstacle ? dot.obstacleColor : dot.color)
-            .cornerRadius(.infinity)
+        Circle()
+            .fill(Color(isObstacle ? dot.obstacleColor : dot.color))
             .frame(width: diameter, height: diameter)
-            .overlay(Circle().strokeBorder(.black, lineWidth: diameter * (dot.coordinates == grid.currentDot ? 0.35 : 0.0)).opacity(0.35))
-            .scaleEffect(dot.coordinates == grid.currentDot ? 1.2 : (dot.isColored ? 1.0 : 0.0))
+            .overlay(Circle().strokeBorder(.black.opacity(0.35), lineWidth: diameter * (dot.coordinates == grid.currentDot && grid.dotsToWin > 0 ? 0.35 : 0.0)))
+            .scaleEffect(dot.coordinates == grid.currentDot && grid.dotsToWin > 0 ? 1.2 : (dot.isColored ? 1.0 : 0.0))
             .padding(6)
             .onAppear {
                 diameter = UIScreen.main.bounds.width / CGFloat(grid.cols) - 17

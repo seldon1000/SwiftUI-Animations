@@ -9,8 +9,7 @@ import SwiftUI
 
 class Grid: ObservableObject {
     @Published var currentDot: (Int, Int)
-    
-    private var dotsToWin: Int
+    var dotsToWin: Int
     var dots: [[Dot]]
     
     private let startDot: (Int, Int)
