@@ -13,7 +13,7 @@ Some key aspects of the project:
 Animation&Motion, probably one of the most important aspects of UX design. In order to provide a good UX, an application should include nice, smooth and consistent animations. Animations let the user understand what's going on inside the app: a loading process, a swipe, a tap on the screen, everything should come with a coherent visual feedback.
 
 
-![Alt Text](https://github.com/seldon1000/SwiftUI_Animations/blob/main/ezgif-2-a1c545c1e7.gif)                                                             ![Alt Text](https://github.com/seldon1000/SwiftUI_Animations/blob/main/ezgif-2-72a74f9641.gif)
+![Alt Text](https://github.com/seldon1000/SwiftUI_Animations/blob/main/ezgif-2-a1c545c1e7.gif)                              ![Alt Text](https://github.com/seldon1000/SwiftUI_Animations/blob/main/ezgif-2-72a74f9641.gif)
 
 ## Scale&Size
 *** work in progress ***
