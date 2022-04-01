@@ -289,10 +289,39 @@ Aaaaaand that's it. Kinda simple. Now, one last animation.
 
 ## Timed coolness
 
-
+This is no doubt my favorite one. Implementing it seemed kinda difficult at first, but Swift and SwiftUI made it actually pretty simple. We're gonna use concurrency for this one. But first, take a look at its magnificence.
 
 ![Alt Text](https://github.com/seldon1000/SwiftUI_Animations/blob/main/ezgif-1-5eac10cc89.gif)
 
+And now comes the dirty work. We're gonna reuse previous components this time too, but with some more details. Let's start with GameView, again. The gesture management is bit more comples than we discussed previously. In fact, the grid's ```dragGesture``` returns a Bool value, which is true only when every available dot inside the grid has been colored. If it's true, then the level is done, and some kind of animation should be played before leaving the GameView. So, to make it happen, we trigger another State variable, ```win```. Triggering this variable, will start the animation of coloring dots we've seen above. This animation, although, takes some time, so we again use ```DispatchQueue``` do delay something, this time by 2 whole seconds. Now, let's talk about ```DispatchQueue```. This class defined in Swift lets us execute code asynchronously after a desired delay, without blocking the entire application. But, why can't we use ```.easeInOut.delay(2.0)``` instead? Cause the ```withAnimation``` function does not delay the execution, but only the resulting UI update animation. Huh? Well, that means that as soon as ```withAnimation``` is called, every changes is applied, while the UI response is delayed. This approach leave us with unexpected results. Using ```DispatchQueue``` instead, is whole execution is delayed, so the changes are not applied immediately, but "exactly" after 2 seconds, and then the UI is updated accordingly. I know this could be a bit tricky to understand, that's why I'm telling you this: go read the documentation, determine the inadequacy of it and then try it yourself. That's how I've to know. However, once 2 seconds have passed, the level will close itself and you'll go back to the MainView.
 
+```swift
+.gesture(DragGesture().onEnded { value in
+    if !win && !showMenu {
+        if grid.dragGesture(translation: value.translation) {
+            win.toggle()
+                        
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                withAnimation(.easeInOut) {
+                    showMenu = false
+                    isPlaying = false
+                }
+            }
+        }
+    }
+})
+```
 
-*** work in progress ***
+One last bit of code and then you're free. This below is taken from the DotComponent file. This says that: when the win variable is triggered, the dot is changed from an obstacle to a normal dot, with an animation delayed by a random value. This makes the dot turn from a grey color to orange, with a random delay. This is how you build that cool animation.
+
+```swift
+.onChange(of: win) { newValue in
+    if dot.isObstacle && newValue {
+        withAnimation(.easeInOut.delay(Double.random(in: 0.5...1.5))) {
+            isObstacle = false
+        }
+    }
+}
+```
+
+If you have any question, please do not contact me. Go in peace.
