@@ -312,7 +312,7 @@ And now comes the dirty work. We're gonna reuse previous components this time to
 })
 ```
 
-One last bit of code and then you're free. This below is taken from the DotComponent file. This
+One last bit of code and then you're free. This below is taken from the DotComponent file. This says that: when the win variable is triggered, the dot is changed from an obstacle to a normal dot, with an animation delayed by a random value. This makes the dot turn from a grey color to orange, with a random delay. This is how you build that cool animation.
 
 ```
 .onChange(of: win) { newValue in
@@ -324,4 +324,4 @@ One last bit of code and then you're free. This below is taken from the DotCompo
 }
 ```
 
-*** work in progress ***
+If you have any question, please do not contact me. Go in peace.
