@@ -9,7 +9,7 @@ The projects provided in this repository were derived from a mobile iOS game I d
 
 Some key aspects of the project:
 - SwiftUI
-- State
+- @State
 - Explicit animations
 - Scale, opacity, color, etc transitions
 - Concurrency
