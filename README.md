@@ -22,7 +22,7 @@ Animation&Motion, probably one of the most important aspects of UX design. In or
 
 These videos are taken from Dotillism.
 
-Down below, you will find four different animations and their SwiftUI implementation. The project is split in four different repositories for clarity and cleanness.
+Down below, you will find four different animations and their SwiftUI implementation. The project is split in four different repositories for clarity and cleanness. However, the current repository holds one project too, which is the combination of the four you see down here.
 
 ## Animations
 
