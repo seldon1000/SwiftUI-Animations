@@ -1,7 +1,7 @@
 # SwiftUI_Animations
 This repository was created as Frontend project @ Apple Developer Academy | Naples. The goal of the repository is to showcase the potential of SwiftUI framework when implementing modern and complex animations. The project will be deeply analyzed, offering a complete explanation of what was done to implement Animation&Motion inside the application prototype.
 
-The projects provided in this repository were derived from a mobile iOS game I developed, in collaboration with Leonardo Bertinelli, Clelia Iovine and Maddalena Zampitelli. The game is called Dotillism and is completely open source and made entirely using the SwiftUI framework. The game let use complete puzzles, where you to fill the available space inside a grid with colored dots. Since the actual game is pretty complex, I decided to scrap anything not needed for explaining my Animation&Motion work. If you like what you see here and want to dig deeper, or maybe have fun playing Dotillism, you find the link down below.
+The projects provided in this repository were derived from a mobile iOS game I developed, in collaboration with Leonardo Bertinelli, Clelia Iovine and Maddalena Zampitelli. The game is called Dotillism and is completely open source and made entirely using the SwiftUI framework. The game lets you complete puzzles, where you have to fill the available space inside a grid with colored dots. Since the actual game is pretty complex, I decided to scrap anything not needed for explaining my Animation&Motion work. If you like what you see here and want to dig deeper, or maybe have fun playing Dotillism, you find the link down below.
 
 **Dotillism's GitHub**: https://github.com/uevs/Dotillism
 
